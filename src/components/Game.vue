@@ -110,6 +110,7 @@ export default {
       // check list
       if (this.selectedCards.length == 3) {
           if(this.isSet(this.selectedCards)) {
+            this.resetSelection();
             alert("Correct!")
             this.cards = this.getRandomCards();
             this.counter++
